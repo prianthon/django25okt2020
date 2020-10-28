@@ -4,7 +4,7 @@ from datetime import date
 import calendar
 from calendar import HTMLCalendar
 
-def index(request, year, month):
+def index(request, year=date.today().year, month=date.today().month):
     # t = date.today()
     # month = date.strftime(t, '%b')
     # year = t.year
